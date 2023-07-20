@@ -48,12 +48,34 @@
 
 
 #include<iostream>
-#include<bits/stdc++.h>
+#include<vector>
 using namespace std;
   
 int main(){
+ cout<< "kunal gaurav"<< endl;
+
+ unsigned int a = 9;
+
   vector<int> v;
 
   v.push_back(1);
+  v.emplace_back(2);
+
+  for(int i=0; i<v.size(); i++){
+    cout<<v[i] << " "<<endl;
+  }
+
+  vector<int> v3(5);
+
+  vector<int> v1(5, 10);
+  v1.push_back(15);                           
+  v1.emplace_back(23);
+
+  for(int i=0; i<v1.size(); i++){
+    cout<<v1[i] << " ";
+  }
+  
+
+
 return 0;
 }
